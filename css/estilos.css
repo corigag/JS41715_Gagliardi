@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@200;300;400;500&family=Poppins:wght@200;400&display=swap');
+/*font-family: 'Poppins', sans-serif;
+Estilos general*/
+body {
+	background-color: #EFEBE7;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  .special-font {
+	font-family: 'DM Sans', sans-serif;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+	color: black;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+	color: black;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3Csvg fill='%23a4af69' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64px' height='64px'%3E%3Cpath d='M61 21H3c-0.552 0-1-0.448-1-1V10c0-0.552 0.448-1 1-1h58c0.552 0 1 0.448 1 1v10C62 20.552 61.552 21 61 21z M4 19h56v-8H4V19z'/%3E%3Cpath d='M61 38H3c-0.552 0-1-0.448-1-1V27c0-0.552 0.448-1 1-1h58c0.552 0 1 0.448 1 1v10C62 37.552 61.552 38 61 38z M4 36h56v-8H4V36z'/%3E%3Cpath d='M7 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C8 50.552 7.552 51 7 51z M12 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C13 50.552 12.552 51 12 51z M17 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C18 50.552 17.552 51 17 51z M22 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C23 50.552 22.552 51 22 51z M27 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C28 50.552 27.552 51 27 51z M32 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C33 50.552 32.552 51 32 51z M37 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C38 50.552 37.552 51 37 51z M42 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C43 50.552 42.552 51 42 51z M47 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C48 50.552 47.552 51 47 51z M52 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C53 50.552 52.552 51 52 51z M57 51c-0.552 0-1-0.448-1-1v-2c0-0.552 0.448-1 1-1s1 0.448 1 1v2C58 50.552 57.552 51 57 51z'/%3E%3Cpath d='M61 55H3c-0.552 0-1-0.448-1-1V44c0-0.552 0.448-1 1-1h58c0.552 0 1 0.448 1 1v10C62 54.552 61.552 55 61 55z M4 53h56v-8 H4V53z'/%3E%3C/svg%3E");
+  }
+  
+  #header {
+	background-color: #DFDFE2;
+	z-index: 100;
+	height: 100px;
+	box-shadow: 0 0 10px 1px black;
+	transition: all 250ms;
+  }
+  
+  #header:hover {
+	height: 110px;
+	background-color: #D5E2BC;
+  }
+  
+  .offcanvas {
+	background-color: #DFDFE2;
+	opacity: 0.9;
+  }
+  
+  #footer {
+	background-color: #F0DCCA;
+	min-height: 40vh;
+	width: 100%;
+  }
+  
+  #footer .footer_icono  {
+	width: 1.8rem;
+	height: 1.8rem;
+  }
+  .flecha_icono{
+	width: 2rem;
+	height: 2rem;
+	margin-top: 2rem;
+  }
+  .modal-header {
+	border-bottom: 0;
+  }
+  
+  .modal-footer {
+	border-top: 0;
+	padding: .25rem;
+  }
+  
+  .modal-body {
+	padding: .25rem;
+  }
+
+  #banner_1, #banner_2, #banner_3, #banner_4, #banner_5{
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	height: 40vh;
+  }
+  
+
+  
+  #banner_1 {
+	background-image: url("../public/fotos/plantas1.jpg");
+  }
+  
+  #banner_2 {
+	background-image: url("../public/fotos/altar.jpg");
+  }
+  
+  #banner_3 {
+	background-image: url("../public/fotos/higiene.jpg");
+  }
+  
+  #banner_4 {
+	background-image: url("../public/fotos/sol.jpg");
+  }
+
+  #banner_5 {
+	background-image: url("../public/fotos/plantas1.jpg");
+  }
+  
+  .texto_1 {
+	z-index: 2;
+	color: whitesmoke;
+	transition: all 250ms;
+  }
+  
+  .texto_1:hover {
+	transform: scale(1.1, 1.1);
+  }
+  
+  .nav-link {
+	color: black;
+	padding: .1rem 1rem;
+  }
+  
+  .nav-link:hover {
+	color: black;
+  }
+  
+  a:hover {
+	color: black;
+  }
+
+  /*Comienzo estilos tienda*/
+
+.seccion_titulo {
+    background-color: #CFC8E5;
+  }
+
+#icono_carrito {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.headerFilter{
+	position: center;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	margin-left: 4rem;
+}
+/* #textAreaCremas , #textAreaAllProducts{
+	position: fixed;
+    padding: 2em;
+    left: 73%;
+    top: 0%;
+
+    transform: translateX(-50%);
+	
+}  */
+
+.btn_back {
+	border-color: #CFC8E5;
+	color: #735960;
+  }
+  
+.btn_back:hover {
+	color: white;
+	background-color: #CFC8E5;
+  }
+
+  .card-title, .card-title{
+	font-size: 0.9em;
+  }
+  
+  .card-img-top {
+	max-width: 350px;
+    max-height: 250px;
+	object-fit: cover;
+	transition: opacity .15s linear;
+    transform: translateZ(0);
+  }
+
+  .addToCart {
+	background-color: #79818a;
+	color:#CFC8E5;
+	font-size: 1em;
+	
+  }
+  
+  input.amount {
+	width: 2em;
+	text-align: center;
+	font-size: 1em;
+	padding: .25em;
+    margin: 1em .5em 0 0;
+	
+  }
+/* ------------------------------------- */
+#finishBtn{
+	color: whitesmoke;
+	background-color: #735960;
+	border-color: #735960;
+}
+
+.btn:focus {
+	box-shadow: rgba(245, 247, 250, 0.25);
+}
+
+.payment-form{
+	padding-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.payment-form.dark{
+	background-color: #f6f6f6;
+}
+
+.payment-form .content{
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+	background-color: white;
+}
+
+.payment-form .block-heading{
+    padding-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.payment-form .block-heading p{
+	text-align: center;
+	max-width: 420px;
+	margin: auto;
+	opacity:0.7;
+}
+
+.payment-form.dark .block-heading p{
+	opacity:0.8;
+}
+
+.payment-form .block-heading h1,
+.payment-form .block-heading h2,
+.payment-form .block-heading h3 {
+	margin-bottom:1.2rem;
+	color: #6D696A;
+}
+
+.payment-form form{
+	border-top: 2px solid #6D696A;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+	background-color: #ffffff;
+	padding: 0;
+	max-width: 600px;
+	margin: auto;
+}
+
+.payment-form .title{
+	font-size: 1em;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 0.8em;
+	font-weight: 600;
+	padding-bottom: 8px;
+}
+
+.payment-form .products{
+	background-color: #EDE8E9;
+    padding: 25px;
+}
+
+.payment-form .products .item{
+	margin-bottom:1em;
+}
+
+.payment-form .products .item-name{
+	font-weight:600;
+	font-size: 0.9em;
+}
+
+.payment-form .products .item-description{
+	font-size:0.8em;
+	opacity:0.6;
+}
+
+.payment-form .products .item p{
+	margin-bottom:0.2em;
+}
+
+.payment-form .products .price{
+	float: right;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+.payment-form .products .total{
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+	padding-top: 19px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.payment-form .card-details{
+	padding: 25px 25px 15px;
+	
+}
+
+.payment-form .card-details label{
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #79818a;
+	text-transform: uppercase;
+}
+
+.payment-form .card-details button{
+	margin-top: 0.6em;
+	padding:12px 0;
+	font-weight: 600;
+}
+
+.payment-form .date-separator{
+ 	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.btn-check:focus+.btn , .btn:focus{
+	box-shadow: #79818a;
+}
+
+@media (min-width: 576px) {
+	.payment-form .title {
+		font-size: 1.2em; 
+	}
+
+	.payment-form .products {
+		padding: 40px; 
+  	}
+
+	.payment-form .products .item-name {
+		font-size: 1em; 
+	}
+
+	.payment-form .products .price {
+    	font-size: 1em; 
+	}
+
+  	.payment-form .card-details {
+    	padding: 40px 40px 30px; 
+    }
+
+  	.payment-form .card-details button {
+    	margin-top: 2em; 
+    } 
+}
+
+#swal2-title{
+	
+	font-size: 1.1em;
+	line-height: 2em;
+}

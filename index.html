@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tienda Online - Hampi Yura - Medicina Natural y Cosmetica">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal@4/minimal.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>Tienda Online-Hampi Yura</title>
+  </head>
+  <body>
+
+   <!--Inicio Header-->
+
+   <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top" id="header">
+    <a class="navbar-brand mx-4" href="index.html">
+      <img src="./public/images/Hampi-Yura.png" alt="logo hampi hojas" width="140" height="90">
+    </a>         
+    <button class="navbar-toggler me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+      <div class="offcanvas-header">
+        <a class="navbar-brand  ms-4" href="index.html">
+          <img src="./public/images/Hampi-Yura.png" alt="logo hampi hojas" width="140" height="90">
+        </a>    
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body ms-5">
+        <ul class="navbar-nav justify-content-end pt-2 mt-2 me-5 flex-grow-1 pe-3">      
+            <li>
+              <a class="nav-link pb-3" href="https://www.instagram.com/hampi_yura/?hl=es" target="_blank"><img src="public/images/insta.svg" alt="logo Instagram" width="20" height="20"></a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://api.whatsapp.com/send?phone=+5495312597763&text=Hola%20Hampi%20Yura%20%F0%9F%8D%83%20" target="_blank"><img src="public/images/icono-whatsapp.svg" alt="icono whatsapp" width="20" height="20"></a>
+            </li> 
+            <li>
+              <button class="btn nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="public/images/iconoCarrito.png" alt="icono carrito" id="icono_carrito" width="20" height="20"><span id="cartCount">0</span></button>
+            </li>               
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!--cierre Header-->
+
+<!-- container boton Volver Atras -->
+  <div id="containerBtn" class="container-fluid">
+
+  </div>
+<!--Inicio cuerpo Homepage -->
+
+  <div id="containerBanners">
+    <div class="wow animate__animated animate__fadeInUp my-5">
+      <div class="col-12 " id="banner_5">
+        <div class="texto_1 mt-5 pt-5 text-center">
+          <p class="fs-6 fw-bold ">TIENDA ONLINE</p>
+          <p class="fs-4">Hampi todo el día ! </p>
+          <button type="button" class="border border-white rounded p-2" id="btnAllProducts">Ver todos los productos</button>
+        </div>
+      </div>
+    
+      <div class="d-flex flex-wrap wow animate__animated animate__fadeInUp my-5">
+        <div class="col-12 col-md-6" id="banner_1">
+          <div class="texto_1 mt-5 pt-5 text-center">
+            <p class="fs-6 fw-bold ">Cremas, geles y ungûentos</p>
+            <p class="fs-4">Cuidado de la piel</p>
+            <button type="button" class="border border-white rounded p-2" id="btnPiel">Comprar productos</a></button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6" id="banner_2">
+          <div class="texto_1 mt-5 pt-5 text-center">
+              <p class="fs-6 fw-bold ">Tinturas madre</p>
+            <p class="fs-4">Medicina natural</p>
+            <button type="button" class="border border-white rounded p-2 " id="btnTinturas">Comprar tinturas </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap wow animate__animated animate__fadeInUp">
+        <div class="col-12 col-md-6" id="banner_3">
+          <div class="texto_1 mt-5 pt-5 text-center">
+              <p class=" fs-6 fw-bold">Productos Sólidos</p>
+              <p class=" fs-4">Higiene</p>
+              <button type="button" class="border border-white rounded p-2" id="btnHigiene">Comprar productos</a></button>
+          </div>
+        </div>
+        <div class="container-fluid col-12 col-md-6" id="banner_4">
+          <div class="texto_1 mt-5 pt-5 text-center">
+           <p class="fs-6 fw-bold ">Aceites, protectores solares</p>
+            <p class="fs-4">Cuidado del sol</p>
+            <button type="button" class="border border-white rounded p-2" id="btnVerano">Comprar linea verano</a></button>
+          </div>
+          </div>
+        </div>
+      </div> 
+     </div>
+
+  <!--Inicio container offcanvas carrito-->
+
+    <div class="offcanvas offcanvas-end col-8 " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="cartBody"> 
+      </div>
+    </div>
+
+<!--Inicio container productos-->
+   
+    <div class="container">
+      <div class="row justify-content-start">
+
+          <div class="col-sm-12 col-md-6 d-none" id="textAreaAllProducts">
+            <p class="headerFilter">PRODUCTOS HAMPI YURA</p>
+            <p>Tenemos un producto para cada necesidad.</p>
+            <p>Ciuda tu cuerpo y al medioambiente de la misma forma y al mismo tiempo; con nuestros productos naturales y veganos.</p>
+            <p>Todos nuestros productos son ecológicos y biodegradables. No generan plástico, ni contaminan el agua. Generan 0% residuos.</p>
+            <p>Elegimos no usar plásticos, es parte del cambio que el cuidado de nuestro medio ambiente requiere.</p>
+            <p>¡Sumate vos también!</p>
+          </div>
+
+          <div class="col-sm-12 col-md-6 d-none" id="textAreaCremas">
+            <p class="headerFilter">CREMAS HAMPI YURA</p>
+            <p>Elaboradas con amor y ganas de seguir creando nuevas formas de cuidarnos sanamente y regalarle a nuestros cuerpos productos naturales y reales.</p>
+            <p>Estas alquimias que vamos recordando y recuperando, están hechas a bases de tiempo pasado con amor, respeto y consciencia medioambiental.</p>
+            <p>Usamos diferentes plantas para recuperar todas las propiedades y jugar con tanta variedad. Es increíble el mundo de las plantas y todas las posibilidades que tenemos de combinarlas.</p>
+          </div>
+
+          <div class="col-sm-12 col-md-6 d-none" id="textAreaHigiene">
+            <p class="headerFilter">PRODUCTOS SOLIDOS HAMPI YURA</p>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quae a, odit dolore iste incidunt eaque reprehenderit expedita quo vero beatae dolor maxime architecto! Dolorem ipsa vel modi ad consequatur?</P>
+          </div>
+
+          <div class="col-sm-12 col-md-6 d-none" id="textAreaTinturas">
+            <p class="headerFilter">TINTURAS MADRE HAMPI YURA</p>
+            <p>Las plantas, nuestras medicinas, memorias ancestrales que viven y siguen presentes en cada unx de nosotrxs, esperando que nos abramos a ellas.</p>
+            <p>En Hampi Yura intentamos dar un poco de todo lo que ellas nos dan, ser un puente, de las medicinas, sus espíritus, sus enseñanzas, sus abrazos y sanación sagrada</p>
+            <p>Consultanos por disponibilidad de plantas para armar tu tintura madre personalizada.</p>
+          </div>
+
+          <div class="col-sm-12 col-md-6 d-none" id="textAreaVerano">
+            <p class="headerFilter">LINEA VERANO HAMPI YURA</p>
+            <p>Te presentamos a tus nuevos aliados del verano, una combinación perfecta para el cuidado de la piel en épocas de mucha naturaleza y exposición UV.</p>
+            <p>Toda nuestos productos para el verano estan elaborados con fórmulas naturales, que respetan la piel y no contaminan el medio ambiente, dejando a nuestras aguas libres de resiudos quimicos.</p>
+          </div>
+
+        <div class="col-sm-12 col-md-6 justify-content-sm-center" id="mainContainer">
+        </div>
+      </div>
+    </div>
+  
+
+
+<!--Inicio footer-->
+
+<div class="container-fluid" id="footer">
+    <div class="container-md py-5 px-5 " >
+      <div class="row">
+        <div class="col-12 col-md-6">
+            <p class="fw-bold mb-4">HAMPI YURA</p>
+            <div class="col-10 col-md-8">
+              <p>Una forma de acercarse al mundo de las plantas y animarse, con el adecuado asesoramiento, a su consumo responsable.Una forma de sanar saliendo del sistema que tanto nos intoxica y una alternativa frente a la medicina hegemónica.</p>
+            </div> 
+        </div>
+        <div class="col-7 my-3  col-md-3">
+            <p class= "fw-bold mb-4">ENCONTRANOS EN</p>
+            <p class= "mb-1">Córdoba Capital</p>
+            <p class= "mb-1">Río Ceballos</p>
+            <p class= "mb-1">Argentina</p>
+            <p class= "mb-1">hampi.yura@gmail.com</p>
+        </div>
+        <div class="col-5 my-3 col-md-3">
+          <p class= "fw-bold mb-4">SEGUINOS</p>
+          <a class="nav-link" href="https://www.instagram.com/hampi_yura/?hl=es" target="_blank"><img src="public/images/insta.svg" alt="logo Instagram" width="20" height="20"></a>
+          <a class="nav-link pt-2 " href="https://api.whatsapp.com/send?phone=+5495312597763&text=Hola%20Hampi%20Yura%20%F0%9F%8D%83%20" target="_blank"><img src="public/images/icono-whatsapp.svg" alt="icono whatsapp" width="20" height="20"></a>        
+        </div>
+        <div>
+          <a href="index.html"><img src="public/images/flecha.svg" alt="flecha arriba" class="footer_icono"></a>
+        </div>
+      </div>
+    </div>  
+  </div>
+ 
+ 
+
+<!--Cierre footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
+  <script src="./src/app.js" type="module"></script>
+  <script src="./src/index.js" type="module" ></script>
+  <script src="src/components/cart/cartFunctions.js" type="module"></script>
+  <script src="src/components/storage/storage.js" type="module"></script>
+  
+  <script src="src/controllers/showProductsController.js" type="module"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

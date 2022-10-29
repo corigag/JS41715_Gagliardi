@@ -1,0 +1,138 @@
+[
+    {
+        "id":1,
+        "name":"Shampoo Solido",
+        "image": "public/images/shampoo.jpg",
+        "price": 1300,
+        "category": "Higiene",
+        "stock": 60,
+        "amount": 1
+    },
+    {
+        "id": 2,
+        "name": "Acondicionador Solido",
+        "image": "public/images/acondicionador.jpg",
+        "price": 1200,
+        "category": "Higiene",
+        "stock": 0,
+        "amount": 1
+    },
+    {
+        "id":3,
+        "name": "Desodorante Natural",
+        "image": "public/images/desodorante.jpg",
+        "price": 900,
+        "category": "Higiene",
+        "stock": 0,
+        "amount": 1
+    },
+    {
+        "id":4,
+        "name": "Oleo Corporal",
+        "image": "public/images/oleo.jpg",
+        "price": 900,
+        "category": "Higiene",
+        "stock": 15,
+        "amount": 1
+    },
+    {
+        "id":5,
+        "name": "Pasta Dental",
+        "image": "public/images/pasta.jpg",
+        "price": 900,
+        "category": "Higiene",
+        "stock": 15,
+        "amount": 1
+    },
+    {
+        "id":6,
+        "name": "Crema de Día",
+        "image": "public/images/crema_dia.jpg",
+        "price": 1500,
+        "category": "Cremas",
+        "stock": 30,
+        "amount": 1
+    },
+    {
+        "id":7,
+        "name": "Crema de Noche",
+        "image": "public/images/crema_nocturna.jpg",
+        "price": 1800,
+        "category": "Cremas",
+        "stock": 25,
+        "amount": 1
+    },
+    {
+        "id":8,
+        "name": "Gel Regenerativo",
+        "image": "public/images/gel.jpg",
+        "price": 1500,
+        "category": "Cremas",
+        "stock": 0,
+        "amount": 1
+    },
+    {
+        "id":9,
+        "name": "Crema Medicinal",
+        "image": "public/images/crema_medicinal.jpg",
+        "price": 1500,
+        "category": "Cremas",
+        "stock": 15,
+        "amount": 1
+    },
+    {
+        "id":15,
+        "name": "Tintura Madre",
+        "image": "public/images/tintura.jpg",
+        "price": 800,
+        "category": "Tinturas",
+        "stock": 15,
+        "amount": 1
+    },
+    {
+        "id":15,
+        "name": "Tintura Madre para Mascotas",
+        "image": "public/images/tintu_mascota.jpg",
+        "price": 600,
+        "category": "Tinturas",
+        "stock": 15,
+        "amount": 1
+    },
+    {
+        "id":11,
+        "name": "Repelente Natural",
+        "image": "public/images/repelente.jpg",
+        "price": 1000,
+        "category": "Verano",
+        "stock": 13,
+        "amount": 1
+    },
+    {
+        "id":13,
+        "name": "Protector Solar",
+        "image": "public/images/protector.jpg",
+        "price": 1500,
+        "category": "Verano",
+        "stock": 14,
+        "amount": 1
+    },
+    {
+        "id":12,
+        "name": "Aceite Bronceador",
+        "image": "public/images/aceite_bifasico.jpg",
+        "price": 1400,
+        "category": "Verano",
+        "stock": 0,
+        "amount": 1
+    },
+    {
+        "id":14,
+        "name": "Aceite Bronceador Bifásico",
+        "image": "public/images/aceite_bronceador.jpg",
+        "price": 1800,
+        "category": "Verano",
+        "stock": 15,
+        "amount": 1
+    }
+]
+
