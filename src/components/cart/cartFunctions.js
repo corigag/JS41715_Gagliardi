@@ -155,7 +155,7 @@ const backToStoreBtn = () =>{
       
       backToStoreBtn.addEventListener('click' , () => {
           
-          window.location = '../../../index.html'
+          window.location = 'index.html'
       })
 
       return backToStoreBtn
