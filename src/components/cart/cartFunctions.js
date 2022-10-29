@@ -248,7 +248,7 @@ const finishShopping = () => {
             confirmButtonText: 'Si, redirigirme al checkout'
           }).then((result) => {
             if (result.isConfirmed) {
-                window.location = "../src/components/form/form.html"
+                window.location = "src/components/form/form.html"
             }
           })
           
