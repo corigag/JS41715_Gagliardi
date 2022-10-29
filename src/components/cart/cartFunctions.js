@@ -155,7 +155,7 @@ const backToStoreBtn = () =>{
       
       backToStoreBtn.addEventListener('click' , () => {
           
-          window.location = 'index.html'
+          window.location = '../../index.html'
       })
 
       return backToStoreBtn
@@ -267,7 +267,7 @@ const finishShopping = () => {
             confirmButtonText: 'Si, redirigirme al checkout'
           }).then((result) => {
             if (result.isConfirmed) {
-                window.location = "../form/form.html"
+                window.location = "../components/form/form.html"
             }
           })
           
