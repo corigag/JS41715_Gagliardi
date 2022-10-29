@@ -11,11 +11,8 @@ const renderProducts = (products) => {
     `
     containerBtn.appendChild(btnBack);
     
-    //capturo contenedor productos
     const mainContainer = document.getElementById('mainContainer');
     
-    //agrego clases a div principal tienda
-    //mainContainer.classList.add('container-xxl');
     mainContainer.classList.add('d-flex');
     mainContainer.classList.add('flex-wrap');
     

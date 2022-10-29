@@ -78,8 +78,6 @@ body {
 	height: 40vh;
   }
   
-
-  
   #banner_1 {
 	background-image: url("../public/fotos/piel.jpg");
   }
@@ -179,7 +177,8 @@ body {
     margin: 1em .5em 0 0;
 	
   }
-/* ------------------------------------- */
+
+  /*Comienzo estilos form*/
 #finishBtn{
 	color: whitesmoke;
 	background-color: #735960;

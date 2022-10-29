@@ -1,6 +1,7 @@
 import { cart } from "../cart/cartFunctions.js";
 import { setCartLocalStorage } from "../storage/storage.js";
 
+// crea boton para volver a la tienda
 const backToStoreBtn = () =>{
 
     const backToStoreBtn = document.createElement('button');
@@ -16,6 +17,8 @@ const backToStoreBtn = () =>{
 
       return backToStoreBtn
 }
+
+//pinta resumen del carrito en el formulario 
 const renderCartCheckOut = () => {
 
     let containerItemsCheckOut = document.getElementById('containerItemsCheckOut')
@@ -50,7 +53,7 @@ const renderCartCheckOut = () => {
     
 }
 
-
+//captura datos del formulario, finaliza la compra
 const formData = () => {
     
     const continueBtn = document.getElementById('continueBtn')
@@ -127,4 +130,3 @@ const formData = () => {
 renderCartCheckOut()
 formData()
 
-export { renderCartCheckOut , formData}

@@ -145,7 +145,6 @@ const deleteCartItem = (itemId) => {
 
 }
 
-
 //crea funcionalidad y boton vaciar carrito
 const emptyCart = (cart) => {
     
