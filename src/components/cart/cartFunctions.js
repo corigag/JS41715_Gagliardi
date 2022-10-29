@@ -145,22 +145,6 @@ const deleteCartItem = (itemId) => {
 
 }
 
-const backToStoreBtn = () =>{
-
-    const backToStoreBtn = document.createElement('button');
-      backToStoreBtn.classList.add('btn');
-      backToStoreBtn.classList.add('btn-light');
-      backToStoreBtn.classList.add('mt-5')
-      backToStoreBtn.innerText = "Volver a la tienda"
-      
-      backToStoreBtn.addEventListener('click' , () => {
-          
-          window.location = 'index.html'
-      })
-
-      return backToStoreBtn
-}
-
 
 //crea funcionalidad y boton vaciar carrito
 const emptyCart = (cart) => {
@@ -178,9 +162,6 @@ const emptyCart = (cart) => {
         emptyCartText.innerText = "Su carrito de compras esta vacio"
         offcanvasCart.appendChild(emptyCartText) 
 
-        const backToStore = backToStoreBtn()
-     
-        offcanvasCart.appendChild(backToStore)
     }
 
     emptyCartBtn.addEventListener('click', () =>{
@@ -276,4 +257,4 @@ const finishShopping = () => {
 }
 
 
-export { addToCart , renderCart , showTotal , cart, backToStoreBtn, emptyCart}
+export { addToCart , renderCart , showTotal , cart, emptyCart}

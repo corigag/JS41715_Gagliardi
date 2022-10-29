@@ -1,8 +1,21 @@
 import { cart } from "../cart/cartFunctions.js";
-import { backToStoreBtn } from "../cart/cartFunctions.js";
 import { setCartLocalStorage } from "../storage/storage.js";
 
+const backToStoreBtn = () =>{
 
+    const backToStoreBtn = document.createElement('button');
+      backToStoreBtn.classList.add('btn');
+      backToStoreBtn.classList.add('btn-light');
+      backToStoreBtn.classList.add('mt-5')
+      backToStoreBtn.innerText = "Volver a la tienda"
+      
+      backToStoreBtn.addEventListener('click' , () => {
+          
+          window.location = '/index.html'
+      })
+
+      return backToStoreBtn
+}
 const renderCartCheckOut = () => {
 
     let containerItemsCheckOut = document.getElementById('containerItemsCheckOut')
